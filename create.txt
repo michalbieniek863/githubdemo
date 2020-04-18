@@ -1,0 +1,54 @@
+CREATE TABLE picie (
+  id SERIAL,
+  co TEXT,
+  kiedy TEXT,
+  zapitka TEXT
+);
+
+
+INSERT INTO picie ("co", "kiedy", "zapitka")
+VALUES 
+  ('Whiskey', '13:10:00', 'cola'),
+  ('Vodka', '14:05:00', 'cola'),
+  ('Vodka', '14:05:00', 'sprite'),
+  ('Vodka', '14:05:00', 'cola'),
+  ('Gin', '17:00:00', 'brak');
+
+
+CREATE TABLE gdzie_kupic (
+  id SERIAL,
+  co TEXT,
+  kiedy TEXT,
+  sklep TEXT,
+  cena NUMERIC
+);
+
+
+INSERT INTO gdzie_kupic ("co", "kiedy", "sklep", "cena")
+VALUES 
+  ('Whiskey', '13:10:00', 'Żabka', 5),
+  ('Vodka', '14:05:00', 'Biedronka', 4),
+  ('Vodka', '14:05:00', 'Centrum', 4),
+  ('Vodka', '14:05:00', 'Kiosk', 3),
+  ('Gin', '17:00:00', 'Fresh', 1),
+  ('Gin', '17:00:00', 'Zabka', 2);
+
+
+CREATE TABLE czym_zagryzc (
+  id SERIAL,
+  co TEXT,
+  kiedy TEXT,
+  potrawa TEXT,
+  rodzaj TEXT);
+
+
+INSERT INTO czym_zagryzc ("co", "kiedy", "potrawa", "rodzaj")
+VALUES 
+  ('Whiskey', '13:10:00', 'ogorek', 'malosolny'),
+  ('Whiskey', '13:10:00', 'ogorek', 'konserwowy'),
+  ('Whiskey', '13:10:00', 'czipsy', 'paprykowe'),
+  ('Vodka', '14:05:00', 'herbata', 'rumianek'),
+  ('Vodka', '14:05:00', 'czipsy', 'solone');
+
+
+
