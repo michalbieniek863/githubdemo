@@ -1,0 +1,2 @@
+create table nowa(x int);
+insert into nowa values(1);
